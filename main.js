@@ -46,14 +46,15 @@ document.querySelector('.check').addEventListener('click', function () {
 
     // resets the game once "again" button is clicked
     document.querySelector('.again').addEventListener('click', function () {
-        document.querySelector('.score').textContent = 20;
-        const secretnumber = Math.trunc(Math.random() * 20) + 1;
+        score = 20;
+        document.querySelector('.score').textContent = score;
+        secretNumber = Math.trunc(Math.random() * 20) + 1;
         document.querySelector('.message').textContent = 'Start Guessing...'
         document.querySelector('body').style.backgroundColor = '#222';
         document.querySelector('.number').style.width = '15rem';
         document.querySelector('.number').textContent = '?';
         document.querySelector('.guess').value = '';
-        console.log(secretnumber);
+        console.log(secretNumber);
 
     })
 })
