@@ -19,7 +19,7 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('body').style.backgroundColor = '#F6BE00';
 
         // if number is guessed correct
-    } else if (guess === secretnumber) {
+    } else if (guess === secretNumber) {
         document.querySelector('.message').textContent = 'YOU GUESSED RIGHT!';
         document.querySelector('.number').textContent = secretnumber;
         document.querySelector('body').style.backgroundColor = '#60b347';
@@ -32,9 +32,9 @@ document.querySelector('.check').addEventListener('click', function () {
         }
 
         // if number is guessed incorrectly
-    } else if (guess !== secretnumber) {
+    } else if (guess !== secretNumber) {
         if (score > 1) {
-            document.querySelector('.message').textContent = guess > secretnumber ? 'Too High...' : 'Too Low..';
+            document.querySelector('.message').textContent = guess > secretNumber ? 'Too High...' : 'Too Low..';
             score--;
             document.querySelector('.score').textContent = score;
         } else {
